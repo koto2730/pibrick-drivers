@@ -84,6 +84,9 @@ install_dependencies()
     local header_package
 
     case "${KERNEL_VERSION}" in
+        *rpt-rpi-2712)
+            header_package="linux-headers-rpi-2712"
+            ;;
         *rpt-rpi-v8)
             header_package="linux-headers-rpi-v8"
             ;;
